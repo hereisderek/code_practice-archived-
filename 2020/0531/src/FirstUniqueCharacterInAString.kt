@@ -46,4 +46,23 @@ object FirstUniqueCharacterInAString {
             } else null
         }.min() ?: -1
     }
+
+
+    
+    fun firstUniqChar2(s: String): Int {
+        if(s.isNullOrEmpty()) return -1
+
+        val occurence = IntArray(26){0}
+        for(char in s){
+            occurence[char - 'a'] += 1
+            // println("$char ${occurence[char - 'a']}")
+        }
+
+        for(i in 0 until s.length){
+            if(occurence[s[i]-'a']==1){
+                return i
+            }
+        }
+        return -1
+    }
 }
