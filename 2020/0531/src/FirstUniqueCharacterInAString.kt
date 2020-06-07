@@ -48,7 +48,7 @@ object FirstUniqueCharacterInAString {
     }
 
 
-    
+
     fun firstUniqChar2(s: String): Int {
         if(s.isNullOrEmpty()) return -1
 
