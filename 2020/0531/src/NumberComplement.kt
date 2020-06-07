@@ -27,5 +27,4 @@ object NumberComplement {
         if((1 shl p) == num) p++
         return num xor ((1 shl p) - 1)
     }
-
 }
