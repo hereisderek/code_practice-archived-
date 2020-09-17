@@ -1,4 +1,4 @@
-package _0501.week2
+package _2020._0501.week2
 
 /**
  * Check If It Is a Straight Line
